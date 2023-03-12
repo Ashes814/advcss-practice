@@ -18,7 +18,9 @@
   <body>
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-      <label for="navi-toggle" class="navigation__button">MENU</label>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
       <div class="navigation__background">&nbsp;</div>
 
       <nav class="navigation__nav">
@@ -58,7 +60,9 @@
           ><span class="heading-primary--sub">IS WHERE LIFE HAPPENS</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
     <main>
@@ -155,7 +159,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">最火爆的旅行</h2>
         </div>
@@ -185,7 +189,7 @@
                   <div class="card__price-box">
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
-                    <a href="#" class="btn btn--white">Book NOW !</a>
+                    <a href="#popup" class="btn btn--white">Book NOW !</a>
                   </div>
                 </div>
               </div>
@@ -215,7 +219,7 @@
                   <div class="card__price-box">
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
-                    <a href="#" class="btn btn--white">Book NOW !</a>
+                    <a href="#popup" class="btn btn--white">Book NOW !</a>
                   </div>
                 </div>
               </div>
@@ -245,7 +249,7 @@
                   <div class="card__price-box">
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
-                    <a href="#" class="btn btn--white">Book NOW !</a>
+                    <a href="#popup" class="btn btn--white">Book NOW !</a>
                   </div>
                 </div>
               </div>
@@ -429,6 +433,31 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="photo2" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            similique quas pariatur! Laboriosam vitae accusamus beatae commodi.
+            Quasi autem animi nostrum recusandae ipsa accusantium asperiores,
+            quod dolor eius possimus vel?
+          </p>
+          <a href="#" class="btn btn--green">立即预订</a>
+        </div>
+      </div>
+    </div>
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">Col 1 of 2</div>
